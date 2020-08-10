@@ -2473,6 +2473,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #fed136;
   border-color: #fed136;
+  margin-bottom: 5px;
 }
 .btn-primary:hover {
   color: #fff;
