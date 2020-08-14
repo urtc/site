@@ -474,8 +474,13 @@ mark,
 }
 
 .img-fluid {
+  /*
+  width: 400px;
+  height: 300px;*/
   max-width: 100%;
-  height: auto;
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
 }
 
 .img-thumbnail {
@@ -10209,8 +10214,12 @@ header.masthead .masthead-heading {
   transition: opacity ease-in-out 0.25s;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  font-size: 1.25rem;
+  font-size: 0.75rem;
   color: white;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content p {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
   opacity: 1;
