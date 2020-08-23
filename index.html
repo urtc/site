@@ -16,7 +16,20 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script src="js/three.r119.min.js"></script>
-        <script src="js/vanta.birds.min.js"></script>
+        <script src="vanta.net.min.js"></script>
+        <script>
+          VANTA.NET({
+            el: "#your-element-selector",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+          })
+        </script>
+        <!--<script src="js/vanta.birds.min.js"></script>
         <script>
         // from https://www.vantajs.com/
         window.addEventListener('load', function () {
@@ -41,7 +54,7 @@
             colorMode: "lerp"
           })
         })
-        </script>
+      </script>-->
 
     </head>
     <body id="page-top">
