@@ -230,6 +230,10 @@ table {
   border-collapse: collapse;
 }
 
+#dates td:first-child {
+  text-align: right;
+}
+
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1807,7 +1811,7 @@ pre code {
 }
 .table th,
 .table td {
-  padding: 0.75rem;
+  padding: 0.5rem;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
 }
