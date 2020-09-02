@@ -10660,6 +10660,11 @@ header.masthead .masthead-heading {
   .portfolio-hover-content {
   font-size: 0.75rem;
   color: white;
+  height: 100%;
+}
+#portfolio
+  .portfolio-hover {
+    overflow-y: auto;
 }
 #portfolio
   .portfolio-item
@@ -10669,6 +10674,7 @@ header.masthead .masthead-heading {
   p {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 30px;
 }
 #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
   opacity: 1;
