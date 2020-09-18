@@ -93,7 +93,7 @@ body {
   font-size: 30px;
 }
 
-.date::after {
+/* .date::after {
   content: "";
   flex-grow: 1;
   background: black;
@@ -101,7 +101,7 @@ body {
   font-size: 0px;
   line-height: 0px;
   margin: 0px 8px;
-}
+} */
 
 #schedule .events {
   border: 1px solid #ccc;
