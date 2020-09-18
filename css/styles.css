@@ -83,6 +83,49 @@ body {
   background-color: #fff;
 }
 
+.date {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  margin: 8px 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.date::after {
+  content: "";
+  flex-grow: 1;
+  background: black;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
+
+#schedule .events {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 5px;
+  clear: both;
+}
+
+#schedule .events .details .times {
+  font-size: 13px;
+}
+
+#schedule .events .details .name {
+  /* display: inline-block; */
+  font-size: 20px;
+  font-weight: bold;
+  /* width: 75px; */
+}
+
+#schedule .events .participants img {
+  max-width: 50px;
+}
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -10662,9 +10705,8 @@ header.masthead .masthead-heading {
   color: white;
   height: 100%;
 }
-#portfolio
-  .portfolio-hover {
-    overflow-y: auto;
+#portfolio .portfolio-hover {
+  overflow-y: auto;
 }
 #portfolio
   .portfolio-item
