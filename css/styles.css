@@ -109,6 +109,7 @@ body {
   padding: 10px 20px;
   margin: 5px;
   clear: both;
+  align-items: center;
 }
 
 #schedule .events .details .times {
@@ -117,13 +118,13 @@ body {
 
 #schedule .events .details .name {
   /* display: inline-block; */
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   /* width: 75px; */
 }
 
 #schedule .events .participants img {
-  max-width: 50px;
+  max-width: 45px;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
