@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/styles.css" rel="stylesheet" />
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+  <section class="page-section" id="schedule">
+    <div class="container">
+      <div class="text-center">
+
+<h2>Keynote Speaker Schedule</h2>
+
+<p>Friday:</p>
+</div>
+  <button class="collapsible">2:00pm-2:30pm: Efficient Computing for AI and Robotics - VIVIENNE SZE (MIT)</button>
+  <div class="content">
+    <p>
+      Computing at the edge (near the sensor) is preferred over the cloud due to privacy and/or latency concerns for a wide range of applications including robotics/drones, self-driving cars, smart Internet of Things, and portable/wearable electronics. However, at the edge, there are often stringent constraints on energy consumption and cost in addition to the throughput and the accuracy requirements of the application. In this talk, we will describe how the joint design of algorithms and hardware can be used to reduce energy consumption while delivering real-time and robust performance for applications including deep learning, computer vision, autonomous navigation/exploration and video/image processing.
+    </p>
+  </div>
+  <button class="collapsible">2:30pm-3:00pm: Digital Pandemic Response with PathCheck Foundation: Privacy preserving solutions for contact tracing, tests and vaccines - RAMESH RASKAR (MIT)</button>
+  <div class="content">
+    <p>
+      Pandemics spread before innocent people infect other innocent people. This required a bottom up solution that can capture, analyze and act on the graph of social activities. Can today’s youth use open source open standard solutions to address these challenges? PathCheck Foundation has brought together talented young innovators from all around the world. This is a story about those changemakers.
+    </p>
+  </div>
+
+  <button class="collapsible">2:30pm-3:00pm: Digital Pandemic Response with PathCheck Foundation: Privacy preserving solutions for contact tracing, tests and vaccines - RAMESH RASKAR (MIT)</button>
+  <div class="content">
+    <p>
+      Pandemics spread before innocent people infect other innocent people. This required a bottom up solution that can capture, analyze and act on the graph of social activities. Can today’s youth use open source open standard solutions to address these challenges? PathCheck Foundation has brought together talented young innovators from all around the world. This is a story about those changemakers.
+    </p>
+  </div>
+
+  <button class="collapsible">2:30pm-3:00pm: Digital Pandemic Response with PathCheck Foundation: Privacy preserving solutions for contact tracing, tests and vaccines - RAMESH RASKAR (MIT)</button>
+  <div class="content">
+    <p>
+      Pandemics spread before innocent people infect other innocent people. This required a bottom up solution that can capture, analyze and act on the graph of social activities. Can today’s youth use open source open standard solutions to address these challenges? PathCheck Foundation has brought together talented young innovators from all around the world. This is a story about those changemakers.
+    </p>
+  </div>
+
+<br/>
+<div class="text-center">
+  <p>Saturday:</p>
+</div>
+  <button class="collapsible">2:00pm-2:30pm: Efficient Computing for AI and Robotics - VIVIENNE SZE (MIT)</button>
+  <div class="content">
+  <p>
+  Computing at the edge (near the sensor) is preferred over the cloud due to privacy and/or latency concerns for a wide range of applications including robotics/drones, self-driving cars, smart Internet of Things, and portable/wearable electronics. However, at the edge, there are often stringent constraints on energy consumption and cost in addition to the throughput and the accuracy requirements of the application. In this talk, we will describe how the joint design of algorithms and hardware can be used to reduce energy consumption while delivering real-time and robust performance for applications including deep learning, computer vision, autonomous navigation/exploration and video/image processing.
+  </p>
+  </div>
+  <button class="collapsible">2:30pm-3:00pm: Digital Pandemic Response with PathCheck Foundation: Privacy preserving solutions for contact tracing, tests and vaccines - RAMESH RASKAR (MIT)</button>
+  <div class="content">
+  <p>
+  Pandemics spread before innocent people infect other innocent people. This required a bottom up solution that can capture, analyze and act on the graph of social activities. Can today’s youth use open source open standard solutions to address these challenges? PathCheck Foundation has brought together talented young innovators from all around the world. This is a story about those changemakers.
+  </p>
+  </div>
+
+  <button class="collapsible">2:30pm-3:00pm: Digital Pandemic Response with PathCheck Foundation: Privacy preserving solutions for contact tracing, tests and vaccines - RAMESH RASKAR (MIT)</button>
+  <div class="content">
+  <p>
+  Pandemics spread before innocent people infect other innocent people. This required a bottom up solution that can capture, analyze and act on the graph of social activities. Can today’s youth use open source open standard solutions to address these challenges? PathCheck Foundation has brought together talented young innovators from all around the world. This is a story about those changemakers.
+  </p>
+  </div>
+
+  <button class="collapsible">2:30pm-3:00pm: Digital Pandemic Response with PathCheck Foundation: Privacy preserving solutions for contact tracing, tests and vaccines - RAMESH RASKAR (MIT)</button>
+  <div class="content">
+  <p>
+  Pandemics spread before innocent people infect other innocent people. This required a bottom up solution that can capture, analyze and act on the graph of social activities. Can today’s youth use open source open standard solutions to address these challenges? PathCheck Foundation has brought together talented young innovators from all around the world. This is a story about those changemakers.
+  </p>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
