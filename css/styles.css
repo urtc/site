@@ -6761,6 +6761,24 @@ button.bg-dark:focus {
 
 .rounded-circle {
   border-radius: 50% !important;
+  display:inline-block;
+  float:right;
+  object-fit: cover;
+  padding: 0;
+  line-height: 45px;
+  width: 45px;
+  height: 45px;
+}
+
+.speaker-circle {
+  border-radius: 50% !important;
+  display:inline-block;
+  float:right;
+  object-fit: cover;
+  padding: 0;
+  line-height: 45px;
+  width: 45px;
+  height: 45px;
 }
 
 .rounded-pill {
