@@ -1,179 +1,303 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>URTC Tech Talks</title>
-<link href="css/styles.css" rel="stylesheet" />
-<style>
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>URTC Tech Talks</title>
+  <link href="css/styles.css" rel="stylesheet" />
+  <style>
+    .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
 
-.active, .collapsible:hover {
-  background-color: #555;
-}
+    #schedule {
+      margin-top: 75px;
+    }
 
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
-</style>
+    #schedule .active,
+    #schedule .collapsible:hover {
+      background-color: #555;
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #f1f1f1;
+    }
+  </style>
+  <link rel="icon" type="image/x-icon" href="assets/img/logos/transparent_urtc_logo.png" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+
+  <script src="js/three.r119.min.js"></script>
+  <script src="js/vanta.net.min.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      VANTA.NET({
+        el: ".masthead",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 2.0,
+        scaleMobile: 2.0,
+      });
+    });
+  </script>
 </head>
-<body>
 
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: black;">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/logos/white_urtc_logo.png"
+          alt="" />MIT URTC</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars ml-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
+          </li>
+          <!--
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#dates">Dates</a>
+          </li>
+          -->
+          <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>-->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#guidelines">Guidelines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+          </li>
+          <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </nav>
   <section class="page-section" id="schedule">
     <div class="container">
       <div class="text-center">
 
-<h2>Tech Talk Schedule</h2>
+        <h2>TECH TALK SCHEDULE</h2>
 
-<p>Friday:</p>
-</div>
-  <button class="collapsible">2:00-2:30pm: Efficient Computing for AI and Robotics - VIVIENNE SZE (MIT)
-    <img class="mx-auto speaker-circle" src="assets/img/speakers/vivienne.png" alt="" />
-  </button>
-  <div class="content">
-    <p>
-      Computing at the edge (near the sensor) is preferred over the cloud due to privacy and/or latency concerns for a wide range of applications including robotics/drones, self-driving cars, smart Internet of Things, and portable/wearable electronics. However, at the edge, there are often stringent constraints on energy consumption and cost in addition to the throughput and the accuracy requirements of the application. In this talk, we will describe how the joint design of algorithms and hardware can be used to reduce energy consumption while delivering real-time and robust performance for applications including deep learning, computer vision, autonomous navigation/exploration and video/image processing.
-    </p>
-  </div>
-  <button class="collapsible">2:30-3:00pm: Digital Pandemic Response w/ PathCheck Foundation: Privacy preserving solns. for contact tracing, tests & vaccines - RAMESH RASKAR (MIT)
-    <img class="mx-auto speaker-circle" src="assets/img/speakers/ramesh.jpg" alt="" />
-  </button>
-  <div class="content">
-    <p>
-      Pandemics spread before innocent people infect other innocent people. This required a bottom up solution that can capture, analyze and act on the graph of social activities. Can today’s youth use open source open standard solutions to address these challenges? PathCheck Foundation has brought together talented young innovators from all around the world. This is a story about those changemakers.
-    </p>
-  </div>
+        <p>Friday:</p>
+      </div>
+      <button class="collapsible">2:00-2:30pm: Efficient Computing for AI and Robotics - VIVIENNE SZE (MIT)
+        <img class="mx-auto speaker-circle" src="assets/img/speakers/vivienne.png" alt="" />
+      </button>
+      <div class="content">
+        <p>
+          Computing at the edge (near the sensor) is preferred over the cloud due to privacy and/or latency concerns for
+          a wide range of applications including robotics/drones, self-driving cars, smart Internet of Things, and
+          portable/wearable electronics. However, at the edge, there are often stringent constraints on energy
+          consumption and cost in addition to the throughput and the accuracy requirements of the application. In this
+          talk, we will describe how the joint design of algorithms and hardware can be used to reduce energy
+          consumption while delivering real-time and robust performance for applications including deep learning,
+          computer vision, autonomous navigation/exploration and video/image processing.
+        </p>
+      </div>
+      <button class="collapsible">2:30-3:00pm: Digital Pandemic Response w/ PathCheck Foundation: Privacy preserving
+        solns. for contact tracing, tests & vaccines - RAMESH RASKAR (MIT)
+        <img class="mx-auto speaker-circle" src="assets/img/speakers/ramesh.jpg" alt="" />
+      </button>
+      <div class="content">
+        <p>
+          Pandemics spread before innocent people infect other innocent people. This required a bottom up solution that
+          can capture, analyze and act on the graph of social activities. Can today’s youth use open source open
+          standard solutions to address these challenges? PathCheck Foundation has brought together talented young
+          innovators from all around the world. This is a story about those changemakers.
+        </p>
+      </div>
 
-  <button class="collapsible">
-    3:30-4:00pm: Perpetuating Health Disparities Through AI - LEO CELI (MIT)
-    <img class="mx-auto speaker-circle" src="assets/img/speakers/leo.png" alt="" />
-  </button>
-  <div class="content">
-    <p>
-      From machine learning and computer vision to robotics and natural language processing, the application of data science and artificial intelligence is expected to transform healthcare. At present, a key evaluation metric for machine learning in healthcare applications is accuracy. But just because an algorithm is deemed accurate does not mean it will support fairness in healthcare applications. In an ideal world, only individual patient health and disease factors would determine — and guide prediction of — clinical outcomes. However, studies have repeatedly demonstrated that this is far from the case. Data routinely collected in the process of care are heavily influenced by long-standing social, cultural, and institutional biases. Unless the underlying inequities in our communities are addressed, algorithms will perpetuate, if not magnify, existing health disparities.
-    </p>
-  </div>
+      <button class="collapsible">
+        3:30-4:00pm: Perpetuating Health Disparities Through AI - LEO CELI (MIT)
+        <img class="mx-auto speaker-circle" src="assets/img/speakers/leo.png" alt="" />
+      </button>
+      <div class="content">
+        <p>
+          From machine learning and computer vision to robotics and natural language processing, the application of data
+          science and artificial intelligence is expected to transform healthcare. At present, a key evaluation metric
+          for machine learning in healthcare applications is accuracy. But just because an algorithm is deemed accurate
+          does not mean it will support fairness in healthcare applications. In an ideal world, only individual patient
+          health and disease factors would determine — and guide prediction of — clinical outcomes. However, studies
+          have repeatedly demonstrated that this is far from the case. Data routinely collected in the process of care
+          are heavily influenced by long-standing social, cultural, and institutional biases. Unless the underlying
+          inequities in our communities are addressed, algorithms will perpetuate, if not magnify, existing health
+          disparities.
+        </p>
+      </div>
 
-  <button class="collapsible">
-    4:00-4:30pm: Responsible Machine Learning In Action - FRANCESCA LAZZERI (Microsoft)
-    <img class="mx-auto speaker-circle" src="assets/img/speakers/francesca.png" alt="" />
-  </button>
-  <div class="content">
-    <p>
-      As we are leveraging data for making significant decisions that affect individual lives in domains such as health care, justice, finance, education, marketing, and employment, it is important to ensure the safe, ethical, and responsible use of AI. Data scientists know that no longer accuracy is the only concern when developing machine learning models, interpretability and fairness must be considered as well. In order to make sure that machine learning solutions are fair and the value of their predictions easy to understand and explain, it is essential to build tools that developers and data scientists can use to assess their AI system’s fairness and mitigate any observed unfairness issues. This session will focus on Responsible Machine Learning, by explaining the following aspects and tools: - Fairlearn: an open-source Python package to assess AI system’s fairness and mitigate any observed unfairness issues in your machine learning models. - InterpretML: an open-source Python package that helps you understand your model's global behavior, or understand the reasons behind individual predictions.
-    </p>
-  </div>
+      <button class="collapsible">
+        4:00-4:30pm: Responsible Machine Learning In Action - FRANCESCA LAZZERI (Microsoft)
+        <img class="mx-auto speaker-circle" src="assets/img/speakers/francesca.png" alt="" />
+      </button>
+      <div class="content">
+        <p>
+          As we are leveraging data for making significant decisions that affect individual lives in domains such as
+          health care, justice, finance, education, marketing, and employment, it is important to ensure the safe,
+          ethical, and responsible use of AI. Data scientists know that no longer accuracy is the only concern when
+          developing machine learning models, interpretability and fairness must be considered as well. In order to make
+          sure that machine learning solutions are fair and the value of their predictions easy to understand and
+          explain, it is essential to build tools that developers and data scientists can use to assess their AI
+          system’s fairness and mitigate any observed unfairness issues. This session will focus on Responsible Machine
+          Learning, by explaining the following aspects and tools: - Fairlearn: an open-source Python package to assess
+          AI system’s fairness and mitigate any observed unfairness issues in your machine learning models. -
+          InterpretML: an open-source Python package that helps you understand your model's global behavior, or
+          understand the reasons behind individual predictions.
+        </p>
+      </div>
 
-  <button class="collapsible">
-    5:00-5:30pm: The US ed-tech market -- a 5 year survival guide - PRAMOD ABICHANDANI (LocoRobo)
-    <img class="mx-auto speaker-circle" src="assets/img/speakers/Pramod.jpg" alt="" />
-  </button>
-  <div class="content">
-    <p>
-      I started LocoRobo in 2015 with a simple mission -- bring educational robots to every classroom in the US by 2020. It is 2020 and we are nowhere close to achieving that naive mission. But we have survived and by all metrics, we have thrived. In this talk, I will share some secrets that have guided us through the ups and downs of the US ed-tech market for over 5 years now. I will also share the best and the worst entrepreneurial decisions that we made during this rewarding journey.
-    </p>
-  </div>
+      <button class="collapsible">
+        5:00-5:30pm: The US ed-tech market -- a 5 year survival guide - PRAMOD ABICHANDANI (LocoRobo)
+        <img class="mx-auto speaker-circle" src="assets/img/speakers/Pramod.jpg" alt="" />
+      </button>
+      <div class="content">
+        <p>
+          I started LocoRobo in 2015 with a simple mission -- bring educational robots to every classroom in the US by
+          2020. It is 2020 and we are nowhere close to achieving that naive mission. But we have survived and by all
+          metrics, we have thrived. In this talk, I will share some secrets that have guided us through the ups and
+          downs of the US ed-tech market for over 5 years now. I will also share the best and the worst entrepreneurial
+          decisions that we made during this rewarding journey.
+        </p>
+      </div>
 
-  <button class="collapsible">
-    5:30-6:00pm: Self-Driving Cars and Lidar - SIMON VERGHESE (Waymo)
-    <img class="mx-auto speaker-circle" src="assets/img/speakers/Simon_Verghese.png" alt="" />
-  </button>
-  <div class="content">
-    <p>
-      Before graduating from X as Waymo, Google’s self-driving car project had been using custom
-sensors such as lidars, radars, and cameras for several years. In their 5th generation, the
-sensors are designed to meet the challenging requirements of moving people and goods safely
-and efficiently in dense cities and on highways. Our goal is to make them affordable while
-meeting the performance needed for driverless operation in various applications and weather
-conditions. This talk will review some history of the project and describe a few use-cases for
-sensors and machine learning on Waymo vehicles.
-    </p>
-  </div>
+      <button class="collapsible">
+        5:30-6:00pm: Self-Driving Cars and Lidar - SIMON VERGHESE (Waymo)
+        <img class="mx-auto speaker-circle" src="assets/img/speakers/Simon_Verghese.png" alt="" />
+      </button>
+      <div class="content">
+        <p>
+          Before graduating from X as Waymo, Google’s self-driving car project had been using custom
+          sensors such as lidars, radars, and cameras for several years. In their 5th generation, the
+          sensors are designed to meet the challenging requirements of moving people and goods safely
+          and efficiently in dense cities and on highways. Our goal is to make them affordable while
+          meeting the performance needed for driverless operation in various applications and weather
+          conditions. This talk will review some history of the project and describe a few use-cases for
+          sensors and machine learning on Waymo vehicles.
+        </p>
+      </div>
 
-<br/>
-<div class="text-center">
-  <p>Saturday:</p>
-</div>
-  <button class="collapsible">
-    10:30-11:00am: LESLIE KAELBLING (MIT)
-    <img class="mx-auto speaker-circle" src="assets/img/speakers/leslie.jpg" alt="" />
-  </button>
-  <div class="content">
-    <p>
-      N/A
-    </p>
-  </div>
+      <br />
+      <div class="text-center">
+        <p>Saturday:</p>
+      </div>
+      <button class="collapsible">
+        10:30-11:00am: LESLIE KAELBLING (MIT)
+        <img class="mx-auto speaker-circle" src="assets/img/speakers/leslie.jpg" alt="" />
+      </button>
+      <div class="content">
+        <p>
+          N/A
+        </p>
+      </div>
 
-  <button class="collapsible">
-    11:00-11:30am: The Butterfly Effect of Innovation - SARAH MASTON (Microsoft)
-    <img class="mx-auto speaker-circle" src="assets/img/speakers/sarah.png" alt="" />
-  </button>
-  <div class="content">
-    <p>
-      Ideas come from everywhere, the trick is getting them into the world.  One idea leads to another. This session will follow the origin story of Microsoft’s Project 15 Open Platform for Conservation and Ecological Sustainability.  Internet of Things (IoT) drives sustainability as sensors are at the center of gathering data to generate advanced insights.  The opportunity that IoT and Machine Learning (ML) bring us to re-invent existing processes and innovate on new ideas is immense.  Join us to learn more about Project 15 and leveraging IoT and ML for good.
-    </p>
-  </div>
+      <button class="collapsible">
+        11:00-11:30am: The Butterfly Effect of Innovation - SARAH MASTON (Microsoft)
+        <img class="mx-auto speaker-circle" src="assets/img/speakers/sarah.png" alt="" />
+      </button>
+      <div class="content">
+        <p>
+          Ideas come from everywhere, the trick is getting them into the world. One idea leads to another. This session
+          will follow the origin story of Microsoft’s Project 15 Open Platform for Conservation and Ecological
+          Sustainability. Internet of Things (IoT) drives sustainability as sensors are at the center of gathering data
+          to generate advanced insights. The opportunity that IoT and Machine Learning (ML) bring us to re-invent
+          existing processes and innovate on new ideas is immense. Join us to learn more about Project 15 and leveraging
+          IoT and ML for good.
+        </p>
+      </div>
 
-  <button class="collapsible">
-    3:00-4:00pm: Microsoft Azure IoT Workshop - DAISUKE NAKAHARA (Microsoft)
-    <img class="mx-auto speaker-circle" src="assets/img/speakers/daisuke.png" alt="" />
-  </button>
-  <div class="content">
-    <p>
-      Internet of Things (IoT) solutions have known patterns of development. Come learn how the different components of a holistic IoT solution incorporating machine learning fit together leveraging Azure IoT.  Daisuke will move from learning the basic patterns into real live examples and demo the Project 15 Open Platform for Conservation and Ecological Sustainability.  Bring your questions as Daisuke brings his 23 years of experience to the session to share how to turn ideas into innovation.
-    </p>
-  </div>
+      <button class="collapsible">
+        3:00-4:00pm: Microsoft Azure IoT Workshop - DAISUKE NAKAHARA (Microsoft)
+        <img class="mx-auto speaker-circle" src="assets/img/speakers/daisuke.png" alt="" />
+      </button>
+      <div class="content">
+        <p>
+          Internet of Things (IoT) solutions have known patterns of development. Come learn how the different components
+          of a holistic IoT solution incorporating machine learning fit together leveraging Azure IoT. Daisuke will move
+          from learning the basic patterns into real live examples and demo the Project 15 Open Platform for
+          Conservation and Ecological Sustainability. Bring your questions as Daisuke brings his 23 years of experience
+          to the session to share how to turn ideas into innovation.
+        </p>
+      </div>
 
-  <button class="collapsible">
-    4:00-4:30pm: CLOUD COMPUTING - ADNAN RAFIQUE (Insight Enterprises)
-    <img class="mx-auto speaker-circle" src="assets/img/speakers/adnan.png" alt="" />
-  </button>
-  <div class="content">
-    <p>
-      Talk about Cloud Computing has spread like a marketing virus. But what is cloud
-computing and How does it work? What are different service models and where
-do they fit the most? You will also learn why CXO considering Cloud Computing
-and how does it help them. What new skill sets are required to meet the job?
-market. When you are done with this webinar you will much clear understanding
-of Cloud Computing which will help you develop you career with right skill sets.
-    </p>
-  </div>
+      <button class="collapsible">
+        4:00-4:30pm: CLOUD COMPUTING - ADNAN RAFIQUE (Insight Enterprises)
+        <img class="mx-auto speaker-circle" src="assets/img/speakers/adnan.png" alt="" />
+      </button>
+      <div class="content">
+        <p>
+          Talk about Cloud Computing has spread like a marketing virus. But what is cloud
+          computing and How does it work? What are different service models and where
+          do they fit the most? You will also learn why CXO considering Cloud Computing
+          and how does it help them. What new skill sets are required to meet the job?
+          market. When you are done with this webinar you will much clear understanding
+          of Cloud Computing which will help you develop you career with right skill sets.
+        </p>
+      </div>
 
 
-</div>
-</div>
-</div>
-</section>
+    </div>
+    </div>
+    </div>
+  </section>
 
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+  <!-- Bootstrap core JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- Contact form JS-->
+  <script src="assets/mail/jqBootstrapValidation.js"></script>
+  <script src="assets/mail/contact_me.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
     }
-  });
-}
-</script>
+  </script>
+
 
 </body>
+
 </html>
