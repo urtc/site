@@ -87,10 +87,12 @@ body {
   display: flex;
   flex-basis: 100%;
   align-items: center;
-  margin: 8px 0px;
+  margin: 8px auto;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
+  text-align: center;
+  clear: both;
 }
 
 /* .date::after {
