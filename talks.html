@@ -7,7 +7,7 @@
   <link href="css/styles.css" rel="stylesheet" />
   <style>
     .collapsible {
-      background-color: #777;
+      background-color: #ba55d3;
       color: white;
       cursor: pointer;
       padding: 18px;
@@ -16,6 +16,7 @@
       text-align: left;
       outline: none;
       font-size: 15px;
+      margin: 5px 0px;
     }
 
     #schedule {
@@ -24,15 +25,23 @@
 
     #schedule .active,
     #schedule .collapsible:hover {
-      background-color: #555;
+      background-color: #A632C3;
+    }
+
+    #schedule .collapsible:focus {
+      outline: none;
     }
 
     .content {
-      padding: 0 18px;
+      padding: 0px 20px;
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.2s ease-out;
       background-color: #f1f1f1;
+    }
+
+    .content p {
+      padding-top: 10px;
     }
   </style>
   <link rel="icon" type="image/x-icon" href="assets/img/logos/transparent_urtc_logo.png" />
@@ -77,7 +86,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
+            <a class="nav-link js-scroll-trigger" href="index.html#schedule">Schedule</a>
           </li>
           <!--
           <li class="nav-item">
@@ -86,16 +95,16 @@
           -->
           <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>-->
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#guidelines">Guidelines</a>
+            <a class="nav-link js-scroll-trigger" href="index.html#guidelines">Guidelines</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="index.html#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
+            <a class="nav-link js-scroll-trigger" href="index.html#speakers">Speakers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            <a class="nav-link js-scroll-trigger" href="index.html#team">Team</a>
           </li>
           <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>-->
         </ul>
@@ -107,13 +116,22 @@
       <div class="text-center">
 
         <h2>TECH TALK SCHEDULE</h2>
+        <p style="margin-top: -5px; font-style: italic;">All times in EST. Click each event to view details.</p>
+        <hr />
 
-        <div class="date" style="margin-top: 20px;">
+        <p class="date" style="margin-top: 20px;">
           Friday, October 9
-          <hr>
-        </div>
+        </p>
       </div>
-      <button class="collapsible">2:00-2:30pm: Efficient Computing for AI and Robotics - VIVIENNE SZE (MIT)
+      <button class="collapsible">
+        <div class="details" style="display: inline-block">
+          <div class="times">2:00 PM TO 2:30 PM</div>
+          <div class="eventName">Efficient Computing for AI and Robotics</div>
+          <div class="speaker">Vivienne Sze (MIT)</div>
+          <!-- <svg viewBox="0 0 24 24">
+            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
+          </svg> -->
+        </div>
         <img class="mx-auto speaker-circle" src="assets/img/speakers/vivienne.png" alt="" />
       </button>
       <div class="content">
@@ -127,8 +145,13 @@
           computer vision, autonomous navigation/exploration and video/image processing.
         </p>
       </div>
-      <button class="collapsible">2:30-3:00pm: Digital Pandemic Response w/ PathCheck Foundation: Privacy preserving
-        solns. for contact tracing, tests & vaccines - RAMESH RASKAR (MIT)
+      <button class="collapsible">
+        <div class="details" style="display: inline-block">
+          <div class="times">2:30 PM TO 3:00 PM</div>
+          <div class="eventName">Digital Pandemic Response with PathCheck Foundation</div>
+          <div class="eventDescription">Privacy preserving solutions for contact tracing, tests & vaccines</div>
+          <div class="speaker">Ramesh Raskar (MIT)</div>
+        </div>
         <img class="mx-auto speaker-circle" src="assets/img/speakers/ramesh.jpg" alt="" />
       </button>
       <div class="content">
@@ -141,7 +164,11 @@
       </div>
 
       <button class="collapsible">
-        3:30-4:00pm: Perpetuating Health Disparities Through AI - LEO CELI (MIT)
+        <div class="details" style="display: inline-block">
+          <div class="times">3:30 PM TO 4:00 PM</div>
+          <div class="eventName">Perpetuating Health Disparities Through AI</div>
+          <div class="speaker">Leo Celi (MIT)</div>
+        </div>
         <img class="mx-auto speaker-circle" src="assets/img/speakers/leo.png" alt="" />
       </button>
       <div class="content">
@@ -159,7 +186,11 @@
       </div>
 
       <button class="collapsible">
-        4:00-4:30pm: Responsible Machine Learning In Action - FRANCESCA LAZZERI (Microsoft)
+        <div class="details" style="display: inline-block">
+          <div class="times">4:00 PM TO 4:30 PM</div>
+          <div class="eventName">Responsible Machine Learning In Action</div>
+          <div class="speaker">Francesca Lazzeri (Microsoft)</div>
+        </div>
         <img class="mx-auto speaker-circle" src="assets/img/speakers/francesca.png" alt="" />
       </button>
       <div class="content">
@@ -179,7 +210,11 @@
       </div>
 
       <button class="collapsible">
-        5:00-5:30pm: The US ed-tech market -- a 5 year survival guide - PRAMOD ABICHANDANI (LocoRobo)
+        <div class="details" style="display: inline-block">
+          <div class="times">5:00 PM TO 5:30 PM</div>
+          <div class="eventName">The US Ed-tech Market: A 5 year survival guide</div>
+          <div class="speaker">Pramod Abichandani (LocoRobo)</div>
+        </div>
         <img class="mx-auto speaker-circle" src="assets/img/speakers/Pramod.jpg" alt="" />
       </button>
       <div class="content">
@@ -193,7 +228,11 @@
       </div>
 
       <button class="collapsible">
-        5:30-6:00pm: Self-Driving Cars and Lidar - SIMON VERGHESE (Waymo)
+        <div class="details" style="display: inline-block">
+          <div class="times">5:30 PM TO 6:00 PM</div>
+          <div class="eventName">Self-Driving Cars and Lidar</div>
+          <div class="speaker">Simon Verghese (Waymo)</div>
+        </div>
         <img class="mx-auto speaker-circle" src="assets/img/speakers/Simon_Verghese.png" alt="" />
       </button>
       <div class="content">
@@ -211,10 +250,13 @@
       <br />
       <div class="date">
         Saturday, October 10
-        <hr>
       </div>
       <button class="collapsible">
-        10:30-11:00am: LESLIE KAELBLING (MIT)
+        <div class="details" style="display: inline-block">
+          <div class="times">10:30 AM TO 11:00 AM</div>
+          <div class="eventName">N/A</div>
+          <div class="speaker">Leslie Kaelbling (MIT)</div>
+        </div>
         <img class="mx-auto speaker-circle" src="assets/img/speakers/leslie.jpg" alt="" />
       </button>
       <div class="content">
@@ -224,7 +266,11 @@
       </div>
 
       <button class="collapsible">
-        11:00-11:30am: The Butterfly Effect of Innovation - SARAH MASTON (Microsoft)
+        <div class="details" style="display: inline-block">
+          <div class="times">11:00 AM TO 11:30 AM</div>
+          <div class="eventName">The Butterfly Effect of Innovation</div>
+          <div class="speaker">Sarah Maston (Microsoft)</div>
+        </div>
         <img class="mx-auto speaker-circle" src="assets/img/speakers/sarah.png" alt="" />
       </button>
       <div class="content">
@@ -239,7 +285,11 @@
       </div>
 
       <button class="collapsible">
-        3:00-4:00pm: Microsoft Azure IoT Workshop - DAISUKE NAKAHARA (Microsoft)
+        <div class="details" style="display: inline-block">
+          <div class="times">3:00 PM TO 4:00 PM</div>
+          <div class="eventName">Microsoft Azure IoT Workshop</div>
+          <div class="speaker">Daisuke Nakahara (Microsoft)</div>
+        </div>
         <img class="mx-auto speaker-circle" src="assets/img/speakers/daisuke.png" alt="" />
       </button>
       <div class="content">
@@ -253,7 +303,11 @@
       </div>
 
       <button class="collapsible">
-        4:00-4:30pm: CLOUD COMPUTING - ADNAN RAFIQUE (Insight Enterprises)
+        <div class="details" style="display: inline-block">
+          <div class="times">4:00 PM TO 4:30 PM</div>
+          <div class="eventName">Cloud Computing</div>
+          <div class="speaker">Adnan Rafique (Insight Enterprises)</div>
+        </div>
         <img class="mx-auto speaker-circle" src="assets/img/speakers/adnan.png" alt="" />
       </button>
       <div class="content">

@@ -93,6 +93,7 @@ body {
   font-size: 25px;
   text-align: center;
   clear: both;
+  display: block;
 }
 
 /* .date::after {
@@ -114,15 +115,19 @@ body {
   align-items: center;
 }
 
-#schedule .events .details .times {
+#schedule .details .times {
   font-size: 13px;
 }
 
-#schedule .events .details .name {
+#schedule .details .eventName {
   /* display: inline-block; */
   font-size: 15px;
   font-weight: bold;
   /* width: 75px; */
+}
+
+#schedule .details .eventDescription {
+  font-style: italic;
 }
 
 #schedule .events .participants img {
