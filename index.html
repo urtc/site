@@ -17,6 +17,46 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
+  <style>
+      .collapsible {
+        background-color: #ba55d3;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        margin: 5px 0px;
+      }
+
+      #schedule {
+        /*margin-top: 7*/
+        width: 100%;
+      }
+
+      #schedule .active,
+      #schedule .collapsible:hover {
+        background-color: #A632C3;
+      }
+
+      #schedule .collapsible:focus {
+        outline: none;
+      }
+
+      .content {
+        padding: 0px 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
+
+      .content p {
+        padding-top: 10px;
+        }
+  </style>
   <script src="js/three.r119.min.js"></script>
   <script src="js/vanta.net.min.js"></script>
   <script>
@@ -110,20 +150,18 @@
       <div class="masthead-heading text-uppercase">MIT URTC</div>
       <div class="masthead-subheading"> October 9 - 11, 2020</div>
       <!--<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#dates">Tell Me More</a>-->
-      <a class="btn btn-primary btn-xl text-uppercase" href="https://events.vtools.ieee.org/m/239887"
-        target="_blank">Register for General Admission!</a>
+      <a class="btn btn-primary btn-xl text-uppercase" href="Best-Paper-Awards.pdf"
+        target="_blank" >BEST PAPER AWARDS</a>
     </div>
     <!--<img src="assets/img/call-for-submissions.jpg" style="max-width: 80%; margin-top: 50px; opacity: 0.92" />-->
-    <br /><br />
     <a class="btn btn-primary btn-xl text-uppercase" href="assets/documents/program_table_2020.pdf" target="_blank">See
       Conference Schedule</a> <a href="#tech-talks" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Tech Talk
       Descriptions</a>
   </header>
 
   <!-- Schedule -->
-  <section class="page-section" id="schedule">
-    <div class="container">
-      <div class="text-center">
+  <section class="page-section" id="schedule" style="padding:0">
+      <div class="text-center page-section bg-purple"> <!-- page-section bg-purple -->
         <h2 class="section-heading text-uppercase">
           Schedule
           <div style="font-size:15px; text-transform: none; font-weight: normal; font-style: italic">All times in EDT
@@ -150,45 +188,7 @@
         <a href="assets/documents/Paper PM Track 2.pdf" class="btn btn-primary" target="_blank">PM Track 2</a>
         <a href="assets/documents/Paper PM Track 3.pdf" class="btn btn-primary" target="_blank">PM Track 3</a>
       </div>
-      <style>
-        .collapsible {
-          background-color: #ba55d3;
-          color: white;
-          cursor: pointer;
-          padding: 18px;
-          width: 100%;
-          border: none;
-          text-align: left;
-          outline: none;
-          font-size: 15px;
-          margin: 5px 0px;
-        }
-
-        #schedule {
-          /*margin-top: 7*/
-        }
-
-        #schedule .active,
-        #schedule .collapsible:hover {
-          background-color: #A632C3;
-        }
-
-        #schedule .collapsible:focus {
-          outline: none;
-        }
-
-        .content {
-          padding: 0px 20px;
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.2s ease-out;
-          background-color: #f1f1f1;
-        }
-
-        .content p {
-          padding-top: 10px;
-        }
-      </style>
+      
       <link rel="icon" type="image/x-icon" href="assets/img/logos/transparent_urtc_logo.png" />
       <!-- Font Awesome icons (free version)-->
       <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
@@ -215,7 +215,6 @@
           });
         });
       </script>
-    </head>
 
     <body>
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: black;">
@@ -261,7 +260,7 @@
           <div class="text-center">
 
             <h2 style="color:#ba55d3;display: inline;">TECH TALK </h2><h2 style="display: inline;"> + </h2><h2 style="color:#5755d3;display: inline;">PANEL </h2><h2 style="display: inline;">SCHEDULE</h2>
-            <p style="margin-top: -5px; font-style: italic;">All times in EST. Click each event to view details.</p>
+            <p style="margin-top: -5px; font-style: italic;">All times in EDT. Click each event to view details.</p>
             <hr />
 
             <p class="date" style="margin-top: 20px;">
