@@ -9,7 +9,7 @@
   <title>MIT URTC</title>
   <link rel="icon" type="image/x-icon" href="assets/img/logos/transparent_urtc_logo.png" />
   <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+  <!--<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>-->
   <!-- Google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
@@ -17,6 +17,10 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/socialmedia.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <style>
       .collapsible {
         background-color: #ba55d3;
@@ -116,13 +120,11 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#dates">2021 Dates</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
           </li>
-          <!--
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#dates">Dates</a>
-          </li>
-          -->
           <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>-->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#guidelines">Guidelines</a>
@@ -157,7 +159,64 @@
     <a class="btn btn-primary btn-xl text-uppercase" href="assets/documents/program_table_2020.pdf" target="_blank">2020
       Conference Schedule</a> <a href="#tech-talks" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">2020 Tech Talk
       Descriptions</a>
+    <br/>
+    <a href="https://www.facebook.com/MITURTC/" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://www.youtube.com/channel/UCXoEVFY-NKVdrM92JsKDlZw?fbclid=IwAR3cSRlIehXzyN2r3h9y1LioawnLx5-QGompKOw8dR8efL2mNmABZiRMi_o" target="_blank" class="fa fa-youtube"></a>
+    <a href="https://www.linkedin.com/company/mit-urtc/" target="_blank" class="fa fa-linkedin"></a>
+    <a href="https://www.instagram.com/miturtc/" target="_blank" class="fa fa-instagram"></a>
   </header>
+
+  <!-- Dates-->
+
+  <section class="page-section bg-light" id="dates">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">2021 Dates</h2>
+        <table style="
+              margin-left: auto;
+              margin-right: auto;
+              text-align: left;
+              border-spacing: 10px 0px;
+            ">
+          <tbody>
+            <tr>
+              <td>Early Paper Submission Deadline</td>
+              <td>July 11, 2021</td>
+            </tr>
+
+            <tr>
+              <td>Early Notification of Acceptance</td>
+              <td>July 31, 2021</td>
+            </tr>
+
+            <tr>
+              <td>Regular Paper Submission Deadline</td>
+              <td>July 31, 2021</td>
+            </tr>
+
+            <tr>
+              <td>Regular Notification of Acceptance</td>
+              <td>August 21, 2021</td>
+            </tr>
+
+            <tr>
+              <td>Poster and Lighting Talk Submission Deadline</td>
+              <td>August 29, 2021</td>
+            </tr>
+
+            <tr>
+              <td>Poster and Lightning Talk Acceptance Notification</td>
+              <td>September 5, 2021</td>
+            </tr>
+
+            <tr>
+              <td>Conference Dates</td>
+              <td>October 8, 2021 - October 10, 2021</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
   <!-- Schedule -->
   <section class="page-section" id="schedule" style="padding:0">
@@ -187,74 +246,19 @@
         <a href="assets/documents/Paper PM Track 1.pdf" class="btn btn-primary" target="_blank">PM Track 1</a>
         <a href="assets/documents/Paper PM Track 2.pdf" class="btn btn-primary" target="_blank">PM Track 2</a>
         <a href="assets/documents/Paper PM Track 3.pdf" class="btn btn-primary" target="_blank">PM Track 3</a>
-      </div>
-      
-      <link rel="icon" type="image/x-icon" href="assets/img/logos/transparent_urtc_logo.png" />
-      <!-- Font Awesome icons (free version)-->
-      <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-      <!-- Google fonts-->
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-      <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-      <!-- Core theme CSS (includes Bootstrap)-->
 
-      <script src="js/three.r119.min.js"></script>
-      <script src="js/vanta.net.min.js"></script>
-      <script>
-        window.addEventListener("load", function () {
-          VANTA.NET({
-            el: ".masthead",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.0,
-            minWidth: 200.0,
-            scale: 2.0,
-            scaleMobile: 2.0,
-          });
-        });
-      </script>
+        <br /><br />
+        <h3>Poster Abstracts</h3>
+        <a href="assets/documents/Poster Session 1 Room A.pdf" class="btn btn-primary" target="_blank">Session #1: Room A</a>
+        <a href="assets/documents/Poster Session 1 Room B.pdf" class="btn btn-primary" target="_blank">Session #1: Room B</a>
+        <a href="assets/documents/Poster Session 2 Room A.pdf" class="btn btn-primary" target="_blank">Session #2: Room A</a>
+        <a href="assets/documents/Poster Session 2 Room B.pdf" class="btn btn-primary" target="_blank">Session #2: Room B</a>
+        <br/><br/>
+        <h3>Lightning Talks Abstracts</h3>
+        <a href="assets/documents/Lightning Talks Abstract.pdf" class="btn btn-primary" target="_blank">Lightning Talks</a>
+      </div>
 
     <body>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: black;">
-        <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/logos/white_urtc_logo.png"
-              alt="" />MIT URTC</a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-            aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars ml-1"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase ml-auto">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html#schedule">Schedule</a>
-              </li>
-              <!--
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#dates">Dates</a>
-              </li>
-              -->
-              <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>-->
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html#guidelines">Guidelines</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html#speakers">Speakers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html#team">Team</a>
-              </li>
-              <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>-->
-            </ul>
-          </div>
-        </div>
-      </nav>
       <section class="page-section" id="tech-talks">
         <div class="container">
           <div class="text-center">
@@ -603,67 +607,6 @@
     </div>
   </section>
 
-  <!-- Dates-->
-  <!--
-  <section class="page-section bg-light" id="dates">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="section-heading text-uppercase">Important Dates</h2>
-        <table style="
-              margin-left: auto;
-              margin-right: auto;
-              text-align: left;
-              border-spacing: 10px 0px;
-            ">
-          <tbody>
-            <tr>
-              <td>Early Paper Submission Deadline</td>
-              <td>July 12, 2020</td>
-            </tr>
-
-            <tr>
-              <td>Early Notification of Acceptance</td>
-              <td>August 9, 2020</td>
-            </tr>
-
-            <tr>
-              <td>Regular Paper Submission Deadline</td>
-              <td>August 31, 2020</td>
-            </tr>
-
-            <tr>
-              <td>Regular Notification of Acceptance</td>
-              <td>September 13, 2020</td>
-            </tr>
-
-            <tr>
-              <td>Poster Submission Deadline</td>
-              <td>September 6, 2020</td>
-            </tr>
-
-            <tr>
-              <td>Lightning Talk Submission Deadline</td>
-              <td>September 6, 2020</td>
-            </tr>
-
-            <tr>
-              <td>Poster Acceptance Notification</td>
-              <td>September 15, 2020</td>
-            </tr>
-
-            <tr>
-              <td>Lightning Talk Acceptance Notification</td>
-              <td>September 15, 2020</td>
-            </tr>
-
-            <tr>
-              <td>Conference Dates</td>
-              <td>October 9, 2020 - October 11, 2020</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    -->
   <!--
                 <div class="row text-center">
                     <div class="col-md-4">
@@ -1530,7 +1473,7 @@
           <div class="col-lg-3">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="assets/img/team/karen.jpg" alt="" />
-              <h4>Karen Liberman '24</h4>
+              <h4>Karen Liberman! '24</h4>
               <p class="text-muted">Technology Team</p>
             </div>
           </div>
