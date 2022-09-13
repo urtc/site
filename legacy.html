@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>MIT URTC</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/logos/transparent_urtc_logo.png" />
+  <!-- Font Awesome icons (free version)-->
+  <!--<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>-->
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/socialmedia.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    .collapsible {
+      background-color: #ba55d3;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      margin: 5px 0px;
+    }
+
+    .team-image {
+      border-radius: 3rem; 
+    }
+
+    #schedule {
+      /*margin-top: 7*/
+      width: 100%;
+    }
+
+    #schedule .active,
+    #schedule .collapsible:hover {
+      background-color: #A632C3;
+    }
+
+    #schedule .collapsible:focus {
+      outline: none;
+    }
+
+    .content {
+      padding: 0px 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #f1f1f1;
+    }
+
+    .content p {
+      padding-top: 10px;
+    }
+  </style>
+  <script src="js/three.r119.min.js"></script>
+  <script src="js/vanta.net.min.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      VANTA.NET({
+        el: ".masthead",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 2.0,
+        scaleMobile: 2.0,
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(window).on('load', function () {
+      $('#myModal').modal('show');
+    });
+  </script>
+
+  <!--<script src="js/vanta.birds.min.js"></script>
+        <script>
+        // from https://www.vantajs.com/
+        window.addEventListener('load', function () {
+          VANTA.BIRDS({
+            el: ".masthead",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 2.00,
+            scaleMobile: 2.00,
+            birdSize: 4.00,
+            wingSpan: 40.00,
+            separation: 100.00,
+            alignment: 1.00,
+            cohesion: 100.00,
+            quantity: 2.00,
+            backgroundColor: 0x33166d,
+            color1: 0xfb0079,
+            color2: 0x4d29cc,
+            colorMode: "lerp"
+          })
+        })
+      </script>-->
+</head>
+
+<body id="page-top">
+  <div style="position:fixed; top: 0; left: 0; background: rgba(0,0,0,0.3); width: 100vw; height: 22px; z-index: 99099999999990 ">
+    <p style="color: rgb(220,220,220); text-align: center; font-size: 14px;"> Check out our new beta website!: <a href="https://miturtc.org">miturtc.org </a></p>
+  </div>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/logos/white_urtc_logo.png"
+          alt="" />MIT URTC</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars ml-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#dates">Dates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#sponsorship">Sponsorship</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
+          </li>
+          <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>-->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#guidelines">Guidelines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+          </li>
+          <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Masthead-->
+  <header class="masthead">
+    <div class="container">
+      <div class="masthead-subheading">
+        MIT Undergraduate Research Technology Conference
+      </div>
+      <div class="masthead-heading text-uppercase">MIT URTC</div>
+      <div style="font-style: italic; font-size:1.5rem"> Hybrid Conference </div>
+      <br />
+      <div class="masthead-subheading"> September 30 - October 2, 2022</div>
+      <!--<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#dates">Tell Me More</a>-->
+      <a class="btn btn-primary btn-xl text-uppercase" href="https://cmt3.research.microsoft.com/URTC2022"
+        target="_blank" >SUBMIT YOUR RESEARCH!</a>
+      <a class="btn btn-primary btn-xl text-uppercase" href="https://events.vtools.ieee.org/m/322774"
+        target="_blank">REGISTER NOW!</a>
+      <a class="btn btn-primary btn-xl text-uppercase" href="assets/documents/program_table_2022.pdf"
+        target="_blank">Schedule</a>
+    </div>
+    <a href="https://www.facebook.com/MITURTC/" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://www.youtube.com/channel/UCXoEVFY-NKVdrM92JsKDlZw?fbclid=IwAR3cSRlIehXzyN2r3h9y1LioawnLx5-QGompKOw8dR8efL2mNmABZiRMi_o"
+      target="_blank" class="fa fa-youtube"></a>
+    <a href="https://www.linkedin.com/company/mit-urtc/" target="_blank" class="fa fa-linkedin"></a>
+    <a href="https://www.instagram.com/miturtc/" target="_blank" class="fa fa-instagram"></a>
+  </header>
+
+  <!-- Dates-->
+
+  <section class="page-section bg-light" id="dates">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">2022 Dates</h2>
+        <table style="
+              margin-left: auto;
+              margin-right: auto;
+              text-align: left;
+              border-spacing: 10px 0px;
+            ">
+          <tbody>
+            <tr>
+              <td>Early Paper Submission Deadline</td>
+              <td>July 10, 2022</td>
+            </tr>
+            <!--
+            <tr>
+              <td>Early Notification of Acceptance</td>
+              <td>July 31, 2022</td>
+            </tr>
+          -->
+
+            <tr>
+              <td>Regular Paper Submission Deadline</td>
+              <td>July 31, 2022</td>
+            </tr>
+
+            <tr>
+              <td>Regular Notification of Acceptance</td>
+              <td>August 28, 2022</td>
+            </tr>
+
+            <tr>
+              <td>Poster and Lighting Talk Submission Deadline</td>
+              <td>August 31, 2022</td>
+            </tr>
+
+            <tr>
+              <td>Poster and Lightning Talk Acceptance Notification</td>
+              <td>September 7, 2022</td>
+            </tr>
+
+            <tr>
+              <td>Conference Dates</td>
+              <td>September 30, 2022 - October 2, 2022</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </section>
+
+  <!-- Sponsorship-->
+  <section class="page-section bg-purple" id="sponsorship">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase" style="margin-bottom: 10px">
+          Sponsorship
+        </h2>
+        <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+        <p>
+          Over the past 7 years, URTC has grown its
+          influence, reaching students
+          internationally and receiving 234
+          submissions last year. Not only will
+          sponsors receive significant exposure to
+          talented individuals from MIT and other
+          top universities, but sponsors also have
+          the opportunity to present a lightning
+          talk, have a booth, and gain additional
+          exposure through the distribution of t-shirts and swag.
+
+          If interested, please email us at <a href="mailto:ieee-ucc-chairs@mit.edu"
+            style="color: #ba55d3">ieee-ucc-chairs@mit.edu</a>!
+        </p>
+        <a class="btn btn-primary" href="assets\documents\sponsorship.pdf" target="_blank"
+          style="margin-top: 10px">View Sponsorship Booklet</a>
+  </section>
+
+  <!-- Schedule -->
+  <section class="page-section" id="schedule" style="padding:0">
+    <div class="text-center page-section bg-light">
+      <!-- page-section bg-purple -->
+      <h2 class="section-heading text-uppercase">
+        2022 Schedule
+        <div style="font-size:15px; text-transform: none; font-weight: normal; font-style: italic">All times in EDT,
+          more info coming soon
+        </div>
+      </h2>
+
+      <a href="assets/documents/program_table_2022.pdf" class="btn btn-primary" target="_blank">Conference
+        Schedule</a>
+      <a href="assets/documents/paper_schedule_2021.pdf" class="btn btn-primary" target="_blank">Paper Presentation
+        Schedule</a>
+      <a href="assets/documents/poster_schedule_2021.pdf" class="btn btn-primary" target="_blank">Poster Presentation
+        Schedule</a>
+      <a href="assets/documents/lightning_talks_schedule_2021.pdf" class="btn btn-primary" target="_blank">Lightning
+        Talks
+        Schedule</a>
+      <!--
+        <a href="#tech-talks" class="btn btn-primary js-scroll-trigger">Tech Talk Descriptions</a>
+        <a href="assets/documents/program_table_2020.pdf" class="btn btn-primary" target="_blank">Conference
+          Schedule</a>
+        <br />
+        <a href="assets/documents/paper_schedule_2020.pdf" class="btn btn-primary" target="_blank">Paper Presentation
+          Schedule</a>
+        <a href="assets/documents/poster_schedule_2020.pdf" class="btn btn-primary" target="_blank">Poster Presentation
+          Schedule</a>
+        <a href="assets/documents/lightning_talks_schedule_2020.pdf" class="btn btn-primary" target="_blank">Lightning
+          Talks
+          Schedule</a>
+
+        <br /><br />
+        <h3>Paper Abstracts</h3>
+        <a href="assets/documents/Paper AM Track 1.pdf" class="btn btn-primary" target="_blank">AM Track 1</a>
+        <a href="assets/documents/Paper AM Track 2.pdf" class="btn btn-primary" target="_blank">AM Track 2</a>
+        <a href="assets/documents/Paper AM Track 3.pdf" class="btn btn-primary" target="_blank">AM Track 3</a>
+        <a href="assets/documents/Paper PM Track 1.pdf" class="btn btn-primary" target="_blank">PM Track 1</a>
+        <a href="assets/documents/Paper PM Track 2.pdf" class="btn btn-primary" target="_blank">PM Track 2</a>
+        <a href="assets/documents/Paper PM Track 3.pdf" class="btn btn-primary" target="_blank">PM Track 3</a>
+
+        <br /><br />
+        <h3>Poster Abstracts</h3>
+        <a href="assets/documents/Poster Session 1 Room A.pdf" class="btn btn-primary" target="_blank">Session #1: Room A</a>
+        <a href="assets/documents/Poster Session 1 Room B.pdf" class="btn btn-primary" target="_blank">Session #1: Room B</a>
+        <a href="assets/documents/Poster Session 2 Room A.pdf" class="btn btn-primary" target="_blank">Session #2: Room A</a>
+        <a href="assets/documents/Poster Session 2 Room B.pdf" class="btn btn-primary" target="_blank">Session #2: Room B</a>
+        <br/><br/>
+        <h3>Lightning Talks Abstracts</h3>
+        <a href="assets/documents/Lightning Talks Abstract.pdf" class="btn btn-primary" target="_blank">Lightning Talks</a>
+      -->
+    </div>
+
+    <body>
+      <section class="page-section" id="tech-talks">
+        <div class="container">
+          <div class="text-center">
+
+            <h2 style="color:#ba55d3;display: inline;">KEYNOTES </h2>
+            <h2 style="display: inline;"> + </h2>
+            <h2 style="color:#5755d3;display: inline;">PANEL </h2>
+            <h2 style="display: inline;">SCHEDULE (2022)</h2>
+            <p style="margin-top: -5px; font-style: italic;">All times in EDT. Click each event to view details.</p>
+            <hr />
+
+            <p class="date" style="margin-top: 20px;">
+              Friday, September 30th 
+            </p>
+          </div>
+          <button class="collapsible">
+            <div class="details" style="display: inline-block">
+              <div class="times">6:30 PM TO 8:00 PM</div>
+              <div class="eventName">Effects and Implications of AI</div>
+              <div class="speaker"> Daniel Huttenlocher </div>
+              <!-- <svg viewBox="0 0 24 24">
+                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
+              </svg> -->
+            </div>
+            <img class="mx-auto speaker-circle" src="assets/img/speakers/daniel.jpeg" alt="" />
+          </button>
+          <div class="content">
+            <p>
+              TBD
+            </p>
+          </div>
+          <button class="collapsible">
+            <div class="details" style="display: inline-block">
+              <div class="times">6:30 PM TO 8:00 PM</div>
+              <div class="eventName">Information Technology
+              </div>
+              <!--<div class="eventDescription">Privacy preserving solutions for contact tracing, tests & vaccines</div>-->
+              <div class="speaker">Hal Abelson</div>
+            </div>
+            <img class="mx-auto speaker-circle" src="assets/img/speakers/hal.jpeg" alt="" />
+          </button>
+          <div class="content">
+            <p>
+              TBD
+            </p>
+          </div>
+
+          <button class="collapsible">
+            <div class="details" style="display: inline-block">
+              <div class="times">TBD/div>
+              <div class="eventName">TBD</div>
+              <div class="speaker">TBD</div>
+            </div>
+            <img class="mx-auto speaker-circle" src="assets/img/speakers/guest.png" alt="" />
+          </button>
+          <div class="content">
+            <p>
+              TBD
+            </p>
+          </div>
+
+          <button class="collapsible" style="background-color:#5755d3;">
+            <div class="details" style="display: inline-block">
+              <div class="times">TBD</div>
+              <div class="eventName">TBD</div>
+              <div class="speaker">TBD</div>
+            </div>
+            <img class="mx-auto speaker-circle" src="assets/img/speakers/guest.png" alt="" />
+            <img class="mx-auto speaker-circle" src="assets/img/speakers/guest.png" alt="" />
+            <img class="mx-auto speaker-circle" src="assets/img/speakers/guest.png" alt="" />
+          </button>
+          <div class="content">
+            <p>
+              TBD
+            </p>
+          </div>
+
+          <br />
+          <div class="date">
+            Saturday, October 1st
+          </div>
+          <button class="collapsible">
+            <div class="details" style="display: inline-block">
+              <div class="times">9:00 AM TO 10:00 AM</div>
+              <div class="eventName">Ali Abedi</div>
+              <div class="speaker">Dr. Ali Abedi </div>
+            </div>
+            <img class="mx-auto speaker-circle" src="assets/img/speakers/ali.jpeg" alt="" />
+          </button>
+          <div class="content">
+            <p>
+              Forest ecosystem plays a major role in determining the future 
+              climate. We need to monitor the forest environment to learn how stressors 
+              affect the changes over time. The concept of digital twins and parallel
+              intelligence can be a powerful tool to create a digital replica of a forested land 
+              in the cloud with real time connections to the physical forest using radio frequency
+              identification tags and sensors. This is an ambitious goal which requires a
+              significant number of sensors which are low cost, reliable and power efficient. We
+              also require extremely efficient spectrum sharing strategies to make this network
+              economical, while not interfering with other existing networks. In this talk, we
+              will take a deeper look at deep learning and artificial intelligence to learn how a 
+              digital forest twin can operate using a radio intelligent system. If you are 
+              interested to learn about wireless sensing, networking, and AI you will find
+              this talk interesting. The main goal of this research is to predict abrupt or extreme events as well as slow changes 
+              in the climate and help develop data driven forest management plans and policies.
+            </p>
+          </div>
+
+          <button class="collapsible">
+            <div class="details" style="display: inline-block">
+              <div class="times">TBD</div>
+              <div class="eventName">TBD</div>
+              <div class="speaker">TBD</div>
+            </div>
+            <img class="mx-auto speaker-circle" src="assets/img/speakers/guest.png" alt="" />
+          </button>
+          <div class="content">
+            <p>
+              TBD
+            </p>
+          </div>
+
+          <button class="collapsible" style="background-color:#5755d3;">
+            <div class="details" style="display: inline-block">
+              <div class="times">TBD</div>
+              <div class="eventName">TBD</div>
+              <div class="speaker">TBD</div>
+            </div>
+            <img class="mx-auto speaker-circle" src="assets/img/speakers/guest.png" alt="" />
+            <img class="mx-auto speaker-circle" src="assets/img/speakers/guest.png" alt="" />
+            <img class="mx-auto speaker-circle" src="assets/img/speakers/guest.png" alt="" />
+          </button>
+          <div class="content">
+            <p>
+              TBD
+            </p>
+          </div>
+
+        </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- Bootstrap core JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+      <!-- Third party plugin JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+      <!-- Contact form JS-->
+      <script src="assets/mail/jqBootstrapValidation.js"></script>
+      <script src="assets/mail/contact_me.js"></script>
+      <!-- Core theme JS-->
+      <script src="js/scripts.js"></script>
+
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+      </script>
+
+      <div style="margin: 0px 25px">
+        <!--
+        <div style="border:1px solid black; padding: 10px 20px;">
+          <div class="date">
+            Friday, October 9
+            <hr>
+          </div>
+          <div>
+            <div class="events">
+              <div class="details" style="display: inline-block">
+                <div class="times">1:30 PM TO 2:00 PM</div>
+                <div class="name">Opening Ceremony</div>
+              </div>
+              <div class="participants" style="display: inline-block;float:right">
+                <img class="mx-auto rounded-circle" src="assets/img/team/fiona.jpg" alt="" />
+              </div>
+            </div>
+            <div class="events">
+              <div class="details" style="display: inline-block;">
+                <div class="times">2:00 PM TO 2:30 PM</div>
+                <div class="name">Keynote Speaker: Vivienne Sze (MIT)</div>
+              </div>
+              <div class="participants" style="display: inline-block;float:right;">
+                <img class="mx-auto rounded-circle" src="assets/img/speakers/vivienne.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>-->
+      </div>
+      </div>
+  </section>
+  </div>
+  </section>
+
+  <!-- Guidelines-->
+  <section class="page-section bg-purple" id="guidelines">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Guidelines</h2>
+        <a class="btn btn-primary" href="assets/documents/paper_presentation_2020.pdf" target="_blank">Paper
+          Presentation</a>
+        <a class="btn btn-primary" href="assets/documents/poster_presentation_2022.pdf" target="_blank">Poster
+          Presentation</a>
+        <a class="btn btn-primary" href="assets/documents/paper_submission_2022.pdf" target="_blank">Paper
+          Submission</a>
+        <a class="btn btn-primary" href="assets/documents/paper_submission_2020.pdf" target="_blank">Paper
+          Template (PDF)</a>
+        <a class="btn btn-primary" href="assets/documents/conference-template-letter.docx" target="_blank">Paper
+          Template (Word)</a>
+        <br /><br />
+      </div>
+
+      <h3 class="section-heading text-center text-uppercase">The 2022 tracks are:</h3>
+      <table style="
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            border-spacing: 10px 0px;
+          ">
+        <tbody>
+          <tr>
+            <td>1. Biological and Biomedical Engineering (BioEECS)</td>
+          </tr>
+          <tr>
+            <td>2. Circuits, Materials, and Nanotechnologies</td>
+          </tr>
+          <tr>
+            <td>3. Computer Systems, Theoretical Computer Science and Mathematics</td>
+          </tr>
+          <tr>
+            <td>4. Machine Learning / Artificial Intelligence (AI)</td>
+          </tr>
+          <tr>
+            <td>5. Robotics and Controls</td>
+          </tr>
+          <tr>
+            <td>6. Security and Communications</td>
+          </tr>
+          <tr>
+            <td>7. Space Application and Technologies</td>
+          </tr>
+          <tr>
+            <td>8. Innovation Research</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+
+    </div>
+  </section>
+
+  <!-- About-->
+  <section class="page-section bg-light" id="about">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase" style="margin-bottom: 10px">
+          About
+        </h2>
+        <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+        <p>
+          The 2022 IEEE MIT Undergraduate Research Technology Conference
+          (URTC) brings together undergraduates from around the world to
+          present, discuss, and develop solutions to advance technology for
+          humanity. Students may publish papers of their school projects,
+          research, innovations, or case studies. Conference attendees will
+          attend a rich program with keynote speeches and technical talks
+          featuring renowned speakers, a student design competition, and
+          networking events. The 2022 URTC conference will be hosted in a 
+          <strong>hybrid setting</strong>.
+        </p>
+        <!--
+        <a class="btn btn-primary" href="https://events.vtools.ieee.org/m/239887" target="_blank"
+          style="margin-top: 10px">Register Now</a>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Speakers-->
+  <div id="speakers">
+    <section class="page-section bg-purple" id="portfolio">
+      <div class="container" style="max-width: 1200px">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">2022 Speakers & Panelists</h2>
+          <!--<a href="#tech-talks" class="btn btn-primary js-scroll-trigger">View Tech Talk Descriptions</a>
+          <br /><br />-->
+          <!--<h4>(More speakers coming soon)</h4>-->
+        </div>
+        <div class="row">
+          <!--<div class="col-lg-4 col-sm-6 mb-4">-->
+          <div class="col-lg-4 col-sm-6 mb-4" style="margin: auto;">
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <p>
+                      Ali Abedi received his BSEE and MSEE from Sharif University in 1996 and 1998, and his PhD in
+                      Electrical and Computer Engineering, from University of Waterloo in 2004. Dr. Abedi joined the University of Maine,
+                      Orono in 2005, where he is currently Professor of Electrical and Computer Engineering and Associate Vice President for Research at UMaine,
+                      an R1 Classified Institution by Carnegie foundation. He was visiting Associate Professor at the University of Maryland, College Park, MD and
+                      Guest Researcher at NIST in 2012 and Faculty Fellow at NASA in 2016. Dr. Abedi is founding Director of WiSe-Net Lab where he directs
+                      research programs in wireless communications and sensor networks for structural monitoring, space explorations and bio-medical applications.
+                      Dr. Abedi has completed 60+ funded research grants worth over $34M resulting in 115+ publications with over 44,000+ downloads and
+                      1000+ citations. He is the recipient of several IEEE awards and served as Associate Editor from
+                      multiple IEEE journals, and chair for several IEEE conferences. He is 2022 Vice President for Conferences at IEEE Council on Radio
+                      Frequency Identification.
+                    </p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/img/speakers/ali.jpeg" alt="" style="
+                    background-color: grey;
+                    background-blend-mode: multiply;
+                  " />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Ali Abedi</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Professor, University of Maine
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4" style="margin: auto;">
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <p>
+                      Ram held senior positions in engineering and research, in medical systems, at Eastman Kodak
+                      Company, Analogic, and Bose Corporation before embarking on a career of full time consulting.
+                      He was educated at IIT Bombay and Yale University and has degrees in Civil Engineering, Fluid
+                      mechanics, Electronic Instrumentation, Biomedical Engineering, and Control System Theory.
+                      <break></break>
+                      Over his career he has designed medical systems such as Patient Monitors, Defibrillators, CT
+                      scanners, Fetal Monitoring systems, Digital and Computed Radiography, and Telemedicine. He
+                      has written standards for ECG systems and Defibrillators for AAMI. He was the past chair of the
+                      IEEE, Rochester NY section.
+                      <break></break>
+                      Ram has consulted for Universities as well as Industry, including some fortune 100 companies.
+                      His consulting includes Strategic-Technology Consulting, Designing and implementing research
+                      systems for Universities, System design and implementation for the Medical device industry. His
+                      consulting includes precision Analog circuitry, High Voltage Power supplies and Magnetics for
+                      X-Ray systems.
+                      <break></break>
+                      He has 16 issued patents in areas of medical devices and systems. His significant Inventions
+                      include a Hand-Cranked defibrillator and the retrofittable Digital Radiography system.
+                      Ram is a mentor to several startups in the Rochester, NY area and is also involved in STEM
+                      science fairs. He likes working with young people.
+                      <break></break>
+                      Ram is a Life senior member of the IEEE, Emeritus member of AAPM, member of AHA and
+                      member of SPIE
+                    </p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/img/speakers/ram.jpeg" alt="" style="
+                    background-color: grey;
+                    background-blend-mode: multiply;
+                  " />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Sreeram (Ram) Dhurjaty</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  PhD, Senior Members of the Institute of Electrical and Electronics Engineers (SMIEEE)
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-sm-6 mb-4" style="margin: auto;">
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <p>
+                      Edward Adelson is the John and Dorothy Professor of Vision Science at MIT, in the Department of Brain and Cognitive Sciences, and the Computer Science and Artificial Intelligence Laboratory (CSAIL). For much of his career he has worked on human vision and computer vision, on topics such as multiscale image representation, motion perception, material perception, and plenoptic imaging. In recent years he has been working on artificial tactile sensing, using an optically based touch system known as GelSight, exploring how high resolution touch can advance robotic manipulation. Professor Adelson is a member of the National Academy of Sciences, a Life Fellow of the IEEE, and the recipient of the Nakayama Medal in Vision Science.
+                    </p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/img/speakers/adelson.jpeg" alt="" />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Edward Adelson</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  John and Dorothy Professor of Vision Science, MIT (Brain and Cognitive Sciences)
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4" style="margin: auto;">
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <p>
+                      Daniel Huttenlocher is the inaugural dean of the MIT Schwarzman College of Computing. Previously he helped found Cornell Tech, the digital technology oriented graduate school created by Cornell University in New York City, and served as its first Dean and Vice Provost. His research and teaching have been recognized by a number of awards including ACM Fellow and CASE Professor of the Year. Huttenlocher's main research interests are in computer vision, social media, and understanding AI. He has a mix of academic and industry background, having been a Computer Science faculty member at Cornell, researcher and manager at the Xerox Palo Alto Research Center (PARC), and CTO of a fintech startup. He served as a member and as the chair of the board of the John D. and Catherine T. MacArthur Foundation, and currently serves as a member of the boards of Corning Inc. and Amazon.com. He received his bachelor's degree from the University of Michigan, and master's and doctorate from MIT.
+                    </p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/img/speakers/daniel.jpeg" alt="" />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Daniel Huttenlocher</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Inaugural Dean, MIT Schwarzman College of Computing
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-sm-6 mb-4" style="margin: auto;">
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <p>
+                      Harold (Hal) Abelson is Class of 1922 Professor of Electrical Engineering and Computer Science at MIT and a Fellow of the IEEE. He holds an A.B. degree from Princeton University and a Ph.D. degree in mathematics from MIT. In 1992, Abelson was designated as one of MIT's six inaugural MacVicar Faculty Fellows, in recognition of his significant and sustained contributions to teaching and undergraduate education. Abelson was recipient in 1992 of the Bose Award (MIT's School of Engineering teaching award), winner of the 1995 Taylor L. Booth Education Award given by IEEE Computer Society, cited for his continued contributions to the pedagogy and teaching of introductory computer science, and of the 2012 ACM Special Interest Group on Computer Science Education Award for Outstanding Contribution to Computer Science Education, and winner of the 2011 ACM Karl Karlstrom Outstanding Educator Award.
+                      <break></break>
+                      Abelson has played key roles in fostering MIT institutional educational technology initiatives including MIT OpenCourseWare and DSpace, and he has served as co-chair of the MIT Council on Educational Technology, which oversees MIT's strategic educational technology activities and investments. He is a leader in the worldwide movement towards openness and democratization of culture and intellectual resources. He was a founding director of Creative Commons, Public Knowledge, and the Free Software Foundation, and a director of the Center for Democracy and Technology — organizations that are devoted to strengthening the global intellectual commons.
+                      <break></break>
+                      Abelson been active since the 1970's in using computation as a conceptual framework in teaching. He directed the first implementation of children's computer language Logo for the Apple Computer, which made the language widely available on personal computers beginning in 1981; and he published a widely selling book on Logo in 1982. His book Turtle Geometry, written with Andy diSessa in 1981, presented a computational approach to geometry was cited as "the first step in a revolutionary change in the entire teaching/learning process."
+                      <break></break>
+                      Abelson leads the development of MIT App Inventor. App Inventor, started by Abelson when he was a visiting faculty member at Google Research, is a Web-based development system aimed at making it easy for young students -- or anyone -- to create original mobile applications.
+                      <br>
+                      Abelson is codirector of the MIT Internet Policy Research Initiative, which collaborates with policymakers and technologists to improve the trustworthiness and effectiveness of interconnected digital systems like the Internet. More generally, Abelson has a broad interest in information technology and policy, and he developed and teaches The MIT course Foundations of Information Policy. He co-authored the 2008 book Blown to Bits, which describes, in non-technical terms, the cultural and political disruptions caused by the information explosion.
+                      <br>
+                      Together with MIT colleague Gerald Sussman, Abelson developed the computer science subject, Structure and Interpretation of Computer Programs, which is organized around the notion that a computer language is primarily a formal medium for expressing ideas about methodology, rather than just a way to get a computer to perform operations. This work, through a popular computer science textbook by Abelson and Gerald and Julie Sussman, videos of their lectures, and the availability on personal computers of the Scheme dialect of Lisp (used in teaching the course), has had a world-wide impact on university computer-science education. This work served as MIT's own introductory computer science subject from 1980 until 2007.
+
+                    </p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/img/speakers/hal.jpeg" alt="" />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Harold (Hal) Abelson</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Professor, MIT (Electrical Engineering and Computer Science) & IEEE Fellow
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-sm-6 mb-4" style="margin: auto;">
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <p>
+                      TBD
+                    </p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/img/speakers/guest.png" alt="" />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">TBD</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  TBD
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4" style="margin: auto;">
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <p>
+                      TBD
+                    </p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/img/speakers/guest.png" alt="" />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">TBD</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  TBD
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4" style="margin: auto;">
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <p>
+                      TBD
+                    </p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/img/speakers/guest.png" alt="" />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">TBD</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  TBD
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4" style="margin: auto;">
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <p>
+                      TBD
+
+                    </p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/img/speakers/guest.png" alt="" />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">TBD</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  TBD
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4" style="margin: auto;">
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <p>
+                      TBD
+                    </p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/img/speakers/guest.png" alt="" />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">TBD</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  TBD
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team-->
+    <section class="page-section bg-light" id="team">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            2022 Organizing Committee
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="team-member">
+              <img class="team-image mx-auto" src="assets/img/team/tammy_chen.JPG" alt="" />
+              <h4>Tammy Chen '24</h4>
+              <p class="text-muted">Conference Chair</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <img class="team-image mx-auto" src="assets/img/team/george_pfp.jpeg" alt="" />
+              <h4>George Liu '25</h4>
+              <p class="text-muted">Conference Chair</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <img class="team-image mx-auto" src="assets/img/team/ellie profile photo - square.png" alt="" />
+              <h4>Ellie Montemayor '26</h4>
+              <p class="text-muted">Conference Chair</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <img class="team-image mx-auto" src="assets/img/team/cathy.jpg" alt="" />
+              <h4>Cathy Yung '24</h4>
+              <p class="text-muted">Logistics Chair</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <img class="team-image mx-auto" src="assets/img/team/gianna_torpey.JPG" alt="" />
+              <h4>Gianna Torpey '23</h4>
+              <p class="text-muted">Publicity Chair</p>
+            </div>
+          </div>
+          <!-- Insert Sponsorship Chair here -->
+          <div class="col-lg-3">
+            <div class="team-member">
+              <img class="team-image mx-auto" src="assets/img/team/qiongzhouhuang.jpeg" alt="" />
+              <h4>Qiong Zhou Huang '24</h4>
+              <p class="text-muted">Technology Team</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <img class="team-image mx-auto" src="https://pdtxar.com/wp-content/uploads/2019/04/person-placeholder.jpg" alt="" />
+              <h4>Neil Deshmukh '24</h4>
+              <p class="text-muted">Logistics Team</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <img class="team-image mx-auto" src="assets/img/team/lucaschu.jpg" alt="" />
+              <h4>Lucas Chu '23</h4>
+              <p class="text-muted">Logistics Team</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <img class="team-image mx-auto" src="assets/img/team/lasya_balachandran.jpg" alt="" />
+              <h4>Lasya Balachandran '25</h4>
+              <p class="text-muted">Logistics Team</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <img class="team-image mx-auto" src="assets/img/team/robert.jpg" alt="" />
+              <h4>Robert Chen '23</h4>
+              <p class="text-muted">Technology Team</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <img class="team-image mx-auto" src="assets/img/team/karen.jpg" alt="" />
+              <h4>Karen Liberman '24</h4>
+              <p class="text-muted">Technology Team</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <img class="team-image mx-auto" src="assets/img/team/meenu.jpg" alt="" />
+              <h4>Meenu Singh '23</h4>
+              <p class="text-muted">Conference Advisor</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <img class="team-image mx-auto" src="assets/img/team/ritik.jpg" alt="" />
+              <h4>Ritik Patnaik '23</h4>
+              <p class="text-muted">Conference Advisor</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <img class="team-image mx-auto" src="assets/img/team/fiona.jpg" alt="" />
+              <h4>Fiona Cai '23</h4>
+              <p class="text-muted">Conference Advisor</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <img class="team-image mx-auto" src="assets/img/team/shulammite.jpg" alt="" />
+              <h4>Shulammite Lim '22</h4>
+              <p class="text-muted">Conference Advisor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="text-lg-left">
+            <h5>
+            Contact us at
+            <a href="mailto:ieee-ucc-chairs@mit.edu" style="color: #ba55d3">ieee-ucc-chairs@mit.edu</a></h5>
+          </div>
+          <div class="col-lg-7 text-lg-right">
+            <a target="_blank" style="color: #a31d21" href="https://accessibility.mit.edu/"><h5>Accessibility</h5></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- Modal 1-->
+
+    <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project Details Go Here-->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg" alt="" />
+                  <p>
+                    Use this area to describe your project. Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Est blanditiis
+                    dolorem culpa incidunt minus dignissimos deserunt repellat
+                    aperiam quasi sunt officia expedita beatae cupiditate,
+                    maiores repudiandae, nostrum, reiciendis facere nemo!
+                  </p>
+                  <ul class="list-inline">
+                    <li>Date: January 2020</li>
+                    <li>Client: Threads</li>
+                    <li>Category: Illustration</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times mr-1"></i>
+                    Close Project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2-->
+    <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project Details Go Here-->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-full.jpg" alt="" />
+                  <p>
+                    Use this area to describe your project. Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Est blanditiis
+                    dolorem culpa incidunt minus dignissimos deserunt repellat
+                    aperiam quasi sunt officia expedita beatae cupiditate,
+                    maiores repudiandae, nostrum, reiciendis facere nemo!
+                  </p>
+                  <ul class="list-inline">
+                    <li>Date: January 2020</li>
+                    <li>Client: Explore</li>
+                    <li>Category: Graphic Design</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times mr-1"></i>
+                    Close Project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 3-->
+    <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project Details Go Here-->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="" />
+                  <p>
+                    Use this area to describe your project. Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Est blanditiis
+                    dolorem culpa incidunt minus dignissimos deserunt repellat
+                    aperiam quasi sunt officia expedita beatae cupiditate,
+                    maiores repudiandae, nostrum, reiciendis facere nemo!
+                  </p>
+                  <ul class="list-inline">
+                    <li>Date: January 2020</li>
+                    <li>Client: Finish</li>
+                    <li>Category: Identity</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times mr-1"></i>
+                    Close Project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project Details Go Here-->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/04-full.jpg" alt="" />
+                  <p>
+                    Use this area to describe your project. Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Est blanditiis
+                    dolorem culpa incidunt minus dignissimos deserunt repellat
+                    aperiam quasi sunt officia expedita beatae cupiditate,
+                    maiores repudiandae, nostrum, reiciendis facere nemo!
+                  </p>
+                  <ul class="list-inline">
+                    <li>Date: January 2020</li>
+                    <li>Client: Lines</li>
+                    <li>Category: Branding</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times mr-1"></i>
+                    Close Project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 5-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project Details Go Here-->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/05-full.jpg" alt="" />
+                  <p>
+                    Use this area to describe your project. Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Est blanditiis
+                    dolorem culpa incidunt minus dignissimos deserunt repellat
+                    aperiam quasi sunt officia expedita beatae cupiditate,
+                    maiores repudiandae, nostrum, reiciendis facere nemo!
+                  </p>
+                  <ul class="list-inline">
+                    <li>Date: January 2020</li>
+                    <li>Client: Southwest</li>
+                    <li>Category: Website Design</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times mr-1"></i>
+                    Close Project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 6-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project Details Go Here-->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/06-full.jpg" alt="" />
+                  <p>
+                    Use this area to describe your project. Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Est blanditiis
+                    dolorem culpa incidunt minus dignissimos deserunt repellat
+                    aperiam quasi sunt officia expedita beatae cupiditate,
+                    maiores repudiandae, nostrum, reiciendis facere nemo!
+                  </p>
+                  <ul class="list-inline">
+                    <li>Date: January 2020</li>
+                    <li>Client: Window</li>
+                    <li>Category: Photography</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times mr-1"></i>
+                    Close Project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
